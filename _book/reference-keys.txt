@@ -1,0 +1,10 @@
+about
+résumé
+mots-clés
+abstract
+keywords
+introduction
+matériel-et-méthodes
+résultats
+discussion
+conclusion

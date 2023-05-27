@@ -1,0 +1,79 @@
+<!-- # Cross-references {#cross} -->
+
+<!-- Cross-references make it easier for your readers to find and link to elements in your book. -->
+
+<!-- ## Chapters and sub-chapters -->
+
+<!-- There are two steps to cross-reference any heading: -->
+
+<!-- 1. Label the heading: `# Hello world {#nice-label}`.  -->
+<!--     - Leave the label off if you like the automated heading generated based on your heading title: for example, `# Hello world` = `# Hello world {#hello-world}`. -->
+<!--     - To label an un-numbered heading, use: `# Hello world {-#nice-label}` or `{# Hello world .unnumbered}`. -->
+
+<!-- 1. Next, reference the labeled heading anywhere in the text using `\@ref(nice-label)`; for example, please see Chapter \@ref(cross).  -->
+<!--     - If you prefer text as the link instead of a numbered reference use: [any text you want can go here](#cross). -->
+
+<!-- ## Captioned figures and tables -->
+
+<!-- Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tab:chunk-label)`, respectively. -->
+
+<!-- See Figure \@ref(fig:nice-fig). -->
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'}
+# par(mar = c(4, 4, .1, .1))
+# plot(pressure, type = 'b', pch = 19)
+```
+
+Don't miss Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+# knitr::kable(
+#   head(pressure, 10), caption = 'Here is a nice table!',
+#   booktabs = TRUE
+# )
+```
+
+
+
+# Introduction
+Le taux de mortalité néonatale, calculé comme le nombre
+d’enfants décédés entre 0 et 28 jours de vie, rapporté à 1 000
+naissances vivantes, pouvait être estimé en Algérie, au milieu
+des années 2000, à 25 pour 1 000, représentant 80 % de la
+mortalité infantile. La mortalité néonatale précoce survenant
+dans les six premiers jours de la vie était, quant à elle, estimée
+à 20 pour 1 000 naissances vivantes, représentant 80 % de la
+mortalité néonatale [18].
+Le taux de mortalité périnatale (mortinatalité et mortalité
+néonatale précoce) est un indicateur remarquable de la
+qualité des soins obstétricaux et néonatals. En l’absence de
+statistiques systématiques sur les morts foetales pour
+déterminer la mortinatalité, la mortalité néonatale précoce
+peut être considérée comme un indicateur de la façon dont
+sont prodigués les soins aux nouveau-nés dans un établissement.
+En effet, la mortalité néonatale figure parmi les
+indicateurs de développement d’une collectivité donnée
+et constitue le reflet de la qualité des soins obstétricaux et
+néonatals dans un établissement de santé.
+La mortalité néonatale précoce dans les services de
+néonatalogie des hôpitaux des pays pauvres peut frôler
+l’hécatombe en dépassant 50 % [4], lorsque le nombre de
+décès recensés entre zéro et six jours de vie est ramené au
+nombre d’enfants nés vivants admis au sein de ces services.
+Dans le cadre du système d’information sur la mortalité
+hospitalière mis en place par le service d’épidémiologie
+(SEMEP) au CHU de Blida, il était particulièrement
+intéressant d’apprécier l’importance et l’évolution de la
+mortalité néonatale enregistrée au CHU ainsi que celles des
+causes du décès néonatal.
+
+
+
+
+
+
+
+
+
+
+

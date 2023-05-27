@@ -1,0 +1,237 @@
+<!-- # Blocks -->
+
+<!-- ## Equations -->
+
+<!-- Here is an equation. -->
+
+<!-- \begin{equation}  -->
+<!--   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k} -->
+<!--   (\#eq:binom) -->
+<!-- \end{equation}  -->
+
+<!-- You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom). -->
+
+
+<!-- ## Theorems and proofs -->
+
+<!-- Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri). -->
+
+<!-- ::: {.theorem #tri} -->
+<!-- For a right triangle, if $c$ denotes the *length* of the hypotenuse -->
+<!-- and $a$ and $b$ denote the lengths of the **other** two sides, we have -->
+<!-- $$a^2 + b^2 = c^2$$ -->
+<!-- ::: -->
+
+<!-- Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>. -->
+
+<!-- ## Callout blocks -->
+
+
+<!-- The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html -->
+
+
+
+# Discussion
+La mortalité néonatale a donc constitué un quart des décès
+survenant au CHU de Blida pendant la période d’étude. Une
+MP de cet ordre (28 %) a été retrouvée au CHU d’Annaba
+(Algérie) au début de la décennie écoulée [8]. Il est frustrant
+de ne pouvoir pousser plus loin les comparaisons, car les
+tentatives visant à établir des statistiques de mortalité et de
+morbidité avec des méthodes standardisées sont restées très
+limitées, même à l’échelle des CHU [7].
+Les décès néonatals survenus en dehors du service de
+néonatalogie ont constitué moins de 4 % (3,3 %) de
+l’ensemble des décès néonatals survenus au CHU. Du fait
+de cette faible proportion, ces décès ont été comptabilisés
+avec ceux qui sont survenus en néonatalogie pour calculer
+la mortalité de service et pour déterminer les autres taux de
+mortalité néonatale.
+La mortalité néonatale précoce a représenté plus de 80 %
+de la mortalité néonatale au CHU de Blida : elle semblait du
+même ordre de grandeur que celle enregistrée dans la plupart
+des pays de la sous-région ouest africaine où elle pouvait
+constituer 75 à 90 % de la mortalité néonatale [2,10]. Le
+risque mesurant la mortalité de service était aussi identique à
+celui enregistré dans un hôpital de Côte-d’Ivoire [19].
+Les comparaisons, malgré les difficultés reconnues
+qu’elles suscitent du point de vue de la validité des données
+et de la standardisation des définitions [11], sont encore plus
+intéressantes lorsque le taux de mortalité néonatale admet
+comme dénominateur le nombre de naissances vivantes
+enregistré dans l’établissement.
+Le taux moyen de mortalité néonatale précoce à l’hôpital
+de gynécologie-obstétrique de Hanoi pendant la période
+1991-1995, de l’ordre de 24 pour 1 000 naissances vivantes
+[13], était approximativement identique à celui enregistré au
+CHU de Blida. Au CHU de Dakar, pendant la décennie
+1994-2003, ce taux était encore plus élevé : 45,5 pour
+1 000 et augmentait même à 67,5 pour 1 000 lorsqu’il était
+
+
+
+tenu compte des nouveau-nés transférés des maternités
+périphériques et dont la proportion représentait 4,2 % [9].
+Le taux de mortalité néonatale précoce à l’hôpital de
+gynécologie-obstétrique de Hanoi n’était plus, en 1995, que
+de 15,3 pour 1 000, chute essentiellement due à une
+augmentation de la proportion d’accouchements normaux
+et à une diminution drastique de la proportion des cas
+adressés par les maternités périphériques, suite à un
+changement dans la politique nationale de santé intervenu
+en 1992 [13]. Ce taux restait néanmoins élevé lorsqu’il était
+comparé à celui enregistré en 1991 dans un hôpital
+universitaire de Malaisie : 5,5 pour 1 000 naissances
+vivantes [3]. Une baisse du taux de mortalité néonatale a
+aussi été enregistrée dans un hôpital universitaire nigérian, de
+50 pour 1 000 en 1974 à 16 pour 1 000 en 1981, baisse
+expliquée par une réduction de la mortalité chez les enfants
+dont le poids de naissance dépassait 2 500 g et ceux
+souffrant d’asphyxie [21]. Le taux de mortalité néonatale
+précoce a atteint 34 pour 1 000 dans un centre universitaire
+de Madagascar [5].
+Le taux de mortalité néonatale précoce pouvait être
+cependant bas en Afrique, de l’ordre de 14 pour 1 000 dans
+un district sanitaire au Burkina Faso, tandis que le taux de
+mortalité néonatale globale était de 24 pour 1 000 [25].
+Le taux de mortalité néonatale précoce dans un district
+rural au Mali était aussi faible (17 pour 1 000), tandis que le
+taux de mortalité néonatale tardive était de 7 pour 1 000, soit
+un taux de mortalité néonatale globale de 24 pour 1 000, plus
+faible que le taux national estimé à 57 pour 1 000 [24].
+Des taux nationaux du même ordre de grandeur pouvaient
+être retrouvés pour l’Afrique et l’Asie. Pour l’Afrique au sud
+du Sahara, le taux moyen régional en 1995 était estimé à
+39 pour 1 000 (variant de 13 pour 1 000 au Kenya à 108 pour
+1 000 au Sénégal), tandis que pour l’Asie du Sud, pour la
+même année, le taux de mortalité néonatale variait de 42 à
+57 pour 1 000 [14].
+Le taux de mortalité néonatale précoce, à partir des
+données portant sur 7 993 grossesses dans six pays en
+développement, pouvait encore être plus faible : 9 pour
+1 000 naissances vivantes [20]. Au Québec, pendant la
+période 1976-2005, le taux de mortalité néonatale précoce
+n’a été que de 2,9 pour 1 000, alors que le taux de mortalité
+néonatale global était de 3,4 pour 1 000 [15]. En République
+tchèque, au milieu des années 1990, le taux de mortalité
+néonatale global n’était plus que de 3,8 pour 1 000 [16].
+On peut à ce niveau mettre en exergue que le CHU de
+Blida ne se distingue finalement pas par un risque moins
+élevé de mortalité néonatale, puisqu’il enregistre des taux
+similaires à ceux enregistrés au niveau national [18]. Par
+ailleurs, le risque annuel de décéder pour un nouveau-né,
+exprimé pour 1 000 naissances vivantes, est resté stationnaire
+pendant toute la période d’étude, malgré la tendance à la
+baisse enregistrée pour la mortalité correspondante de
+
+service. Il est vrai que la proportion des nouveau-nés
+transférés des maternités périphériques était relativement
+élevée ; un nouveau-né sur cinq. Cependant, la proportion
+annuelle de ces transférés a même dessiné une tendance à la
+baisse (r0 = –0,88, p = 0,01), passant de 30,1 % en 2000
+(proportion la plus élevée enregistrée) à 17,5 % en 2006
+(proportion la plus basse enregistrée), suggérant que la
+fonction de centre de référence des grossesses à risque pour
+la région dévolue au CHU n’a pas été accrue au cours de
+la période d’étude. De fait, cette période n’a été caractérisée
+ni par l’acquisition de nouveaux équipements, ni par la mise
+en place de nouvelles techniques d’exploration ou de soins,
+à l’exception d’efforts consentis en matière d’hygiène
+hospitalière.
+La surmortalité masculine en matière de décès néonatals
+est constatée dans presque toutes les recherches antérieures,
+avec un sex-ratio par exemple de 1,3 pour les décès précoces
+dans un centre hospitalier universitaire malgache [5], et a été
+aussi retrouvée au Maroc [1].
+Parmi les causes de mortalité néonatale précoce identifiées
+à travers le monde, la prématurité est souvent retrouvée en
+première position. Il est possible, dans notre série, que
+quelques faux cas de prématurité aient été inclus, notamment
+des hypotrophiques à terme d’un poids de naissance inférieur
+à 2 500 g (date des dernières règles inconnue ou douteuse,
+absence de contrôle par une échographie précoce et nondétermination
+à la naissance de l’âge gestationnel par la
+morphologie et l’examen neurologique). Malgré ces réserves,
+on peut considérer que la prématurité a représenté
+pendant la période d’étude plus de 40 % des décès néonatals
+précoces. Une proportion supérieure à 70 % a été retrouvée
+à l’hôpital de gynécologie-obstétrique de Hanoi [13] et au
+CHU de Lomé, au Togo, au début des années 1990 [4]. Une
+proportion de l’ordre de 50 % a été retrouvée à l’institut de
+nutrition et de santé en Guinée [10].
+Il semble bien que la prématurité puisse représenter plus
+de 60 % des causes de décès néonatals précoces [20].
+Cependant, cette contribution peut être plus faible : de
+l’ordre de 23 % dans un district sanitaire au Burkina
+Faso [25].
+La prématurité a souvent été décrite comme une « maladie
+à caractère social très prononcé », car la prématurité est plus
+fréquente parmi les enfants de femmes pauvres et peu
+éduquées [13]. Le taux de prématurité (naissance avant
+37 semaines de gestation), qui varierait de 5 à 9 % dans les
+pays en développement [23], reste en réalité du même ordre
+de grandeur dans les pays développés et dépasserait 12 %
+aux États-Unis [12].
+La fréquence de la prématurité reste aussi élevée et ne
+semble pas baisser, malgré les avancées réalisées dans la
+connaissance des facteurs de risque et l’introduction de
+mesures médicales pour lutter contre ce problème de santé
+publique. Cependant, des progrès considérables ont été
+
+enregistrés en matière de survie des nouveau-nés prématurés
+[12,17].
+La proportion des prématurés décédés parmi les nouveaunés
+pourrait être estimée à environ 1 % dans notre série
+(844-78 979), mais la létalité due à la prématurité ne peut être
+estimée, étant donné que le nombre total des prématurés nés
+au CHU n’a pu être établi. La mortalité élevée chez les
+prématurés est due au fait que les nouveau-nés prématurés
+sont très vulnérables aux risques d’asphyxie et d’infection
+par immaturité des fonctions immunitaire, respiratoire, etc.
+L’infection a aussi été identifiée comme une cause
+majeure de mortalité néonatale, dépassant la contribution
+de la prématurité, et pouvant représenter jusqu’à 50 % des
+causes de la mortalité néonatale [25]. Dans ce district
+sanitaire, l’infection a représenté la première cause de
+mortalité pendant les deux phases de la période néonatale,
+mais était plus impliquée, comme au CHU de Blida, dans des
+proportions différentes il est vrai, dans la phase tardive que
+dans la phase précoce. Dans notre série, les infections
+nosocomiales ont probablement constitué l’essentiel des
+infections en surpassant le poids des infections d’origine
+maternofoetale, mais le problème n’a pu être quantifié. Les
+efforts consentis en matière d’hygiène hospitalière pourraient
+expliquer les pourcentages relativement bas enregistrés en
+2006, concernant la contribution des infections dans la
+survenue de décès néonatals.
+Les malformations congénitales ont constitué 11,1 % de
+l’ensemble des décès néonatals. Nonobstant les nouveau-nés
+transférés des maternités périphériques et qui seraient
+atteints d’anomalies congénitales, les malformations n’ont
+constitué que 0,3 % des naissances vivantes. Le même taux
+a été retrouvé à l’hôpital de gynécologie-obstétrique de
+Hanoi [13], mais ces taux sont probablement sous-estimés,
+car le diagnostic est clinique, et les malformations mineures
+ne sont pas rapportées. Il est parfois reconnu, parmi les
+décès néonatals précoces, qu’un nouveau-né sur deux
+décède dans les premières 24 heures de vie [18,13]. À
+Blida, cette proportion était de 25 % environ, mais dépassait
+55 % lorsqu’elle était mesurée dans les 48 premières
+heures de vie.
+Tous les décès néonatals ne sont certainement pas
+évitables. Mais la moitié d’entre eux pourraient être évités
+grâce à des mesures simples et peu coûteuses. Des pays
+comme la Colombie ou le Sri Lanka qui enregistrent moins
+de 15 décès pour 1 000 naissances vivantes ont fait la preuve
+que des techniques coûteuses ne sont pas un préalable à une
+réussite en la matière. Dans la plupart des pays, la mortalité
+des enfants dont la mère a bénéficié de soins prénatals et de
+soins qualifiés à l’accouchement est généralement inférieure
+de plus de la moitié à la mortalité des enfants dont la mère n’a
+pas bénéficié de ce type de soins, même si le problème de
+la fragmentation actuelle des soins au nouveau-né reste
+posé [22].
+
+
+
+

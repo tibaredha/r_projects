@@ -1,0 +1,723 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\title{Évolution de la mortalité néonatale}
+\author{Redha TIBA}
+\date{27 05, 2023}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Évolution de la mortalité néonatale},
+  pdfauthor={Redha TIBA},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{about}{%
+\chapter{About}\label{about}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{1}\SpecialCharTok{+}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+\hypertarget{ruxe9sumuxe9}{%
+\chapter{Résumé}\label{ruxe9sumuxe9}}
+
+\citet{tibaredha}
+
+Dans le cadre du système d'information actif mis
+en place par le service d'épidémiologie sur la mortalité
+hospitalière au CHU de Blida (Algérie), une étude a été
+réalisée pour apprécier l'importance et l'évolution de la
+mortalité néonatale enregistrée au CHU au cours des années
+1999-2006, ainsi que celles des causes du décès néonatal.
+La Classification internationale des maladies (CIM-9) a
+été utilisée pour coder la nature de la maladie causale. Les
+opérations de saisie, de contrôle et d'analyse ont été effectuées
+par l'utilisation du logiciel ÉpiInfo™dans sa sixième version.
+Au total, 2 167 décès néonatals ont été enregistrés au CHU
+pendant la période d'étude, soit une mortalité proportionnelle
+de 25,4 \%. La mortalité néonatale précoce (0-6 jours) a
+représenté 83,4 \% de l'ensemble de la mortalité néonatale.
+Près des deux tiers des décès néonatals précoces sont
+intervenus dans les trois premiers jours de vie. L'évolution
+mensuelle du nombre de décès néonatals précoces a dessiné
+une tendance significativement à la hausse au cours de la
+période d'étude (p \textless{} 0,05) sans mise en évidence d'effet
+saisonnier. Le rapport de masculinité était pratiquement le
+même pour la mortalité néonatale précoce et tardive, respectivement
+1,4 et 1,5. La prématurité a représenté 42,1 \% des
+causes de décès de lamortalité néonatale précoce, suivie par le
+syndrome de détresse respiratoire et les infections ; respectivement
+17 et 14,4 \%. Les infections ont représenté, avec une
+fréquence relative de 36,2 \%, la cause la plus fréquente pour
+la mortalité néonatale tardive. Le taux de mortalité néonatale
+précoce au cours de la période d'étude, lorsque celui-ci admet
+pour dénominateur le nombre de nouveau-nés admis en
+néonatalogie pour exprimer la mortalité de service, était de
+15,6 \%. Pendant toute la période d'étude, le taux de mortalité
+néonatale précoce, en déduisant les décès survenus parmi
+les nouveau-nés transférés, pouvait être estimé à 19,2 pour
+
+1 000 naissances vivantes, tandis que le taux de mortalité
+néonatale globale pouvait être estimé à 22,3 pour 1 000 naissances
+vivantes. Aucune tendance temporelle significative n'a
+été mise en exergue. Le CHU de Blida ne se caractérise pas par
+un risque inférieur de mortalité néonatale par rapport à celui
+enregistré à l'échelle nationale. Les données du CHU de Blida
+contribuent à mesurer le degré d'atteinte d'objectifs fixés par
+le Programme national sur la périnatalité.
+
+\hypertarget{mots-cluxe9s}{%
+\section{Mots clés}\label{mots-cluxe9s}}
+
+Mortalité néonatale précoce ·
+Mortalité néonatale tardive · Mortalité proportionnelle ·
+Causes du décès néonatal · Hôpital · Blida · Algérie ·
+Maghreb · Afrique du Nord
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Within the framework of the active information
+system set up by the department of epidemiology on hospital
+mortality at the Blida (Algeria) University Teaching Hospital
+(CHU), a study was carried out to assess the importance and
+evolution of neonatal mortality recorded at the CHU in the
+last eight years (1999-2006) as well as the causes of neonatal
+death. The International Classification of Diseases (ICD-9)
+was used to encode the nature of the causal disease. Using the
+software EpiInfo™in its sixth version performed data entry,
+monitoring and analysis. On the whole, 2,167 neonatal
+deaths were recorded at the CHU during the study period,
+representing a proportional mortality of 25.4\%. Early
+neonatal mortality (0-6 days) accounted for 83.4\% of all
+neonatal mortality. Nearly two thirds of early neonatal deaths
+occurred in the first three days of life. The monthly evolution
+of the number of early neonatal deaths revealed a significant
+rising trend during the study period (P \textless{} 0.05) without
+identification of seasonal effect. The sex ratio was practically
+the same for early and late neonatal mortality, respectively
+1.4 and 1.5. Prematurity accounted for 42.1\% of the deaths
+in early neonatal deaths, followed by respiratory distress
+syndrome and infection, respectively 17.0 and 14.4\%.
+Infections, with a relative frequency of 36.2\%, represented
+
+the most common cause for the late neonatal mortality. The
+rate of early neonatal mortality during the study period, when
+this one took for denominator the number of newborns
+admitted in neonatology to express the mortality of service,
+was 15.6\%. Throughout the study period, the rate of early
+neonatal mortality, without counting the deaths among
+transferred newborns, could be estimated at 19.2 per 1,000
+live births, while the overall neonatal mortality rate could
+be estimated at 22.3 per 1,000 live births. No significant
+temporal tendency was pointed out. The CHU of Blida is not
+characterized by a lower risk of neonatal mortality compared
+to that recorded at national level. The data of the CHU will
+contribute to assessing the achievement of objectives set by
+the National programme on the perinatality.
+
+\hypertarget{keywords}{%
+\section{Keywords}\label{keywords}}
+
+Early neonatal mortality · Late neonatal mortality ·
+Proportional mortality · Causes of neonatal death ·
+Hospital · Blida · Algeria · Maghreb · Northern Africa
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# par(mar = c(4, 4, .1, .1))}
+\CommentTok{\# plot(pressure, type = \textquotesingle{}b\textquotesingle{}, pch = 19)}
+\end{Highlighting}
+\end{Shaded}
+
+Don't miss Table \ref{tab:nice-tab}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# knitr::kable(}
+\CommentTok{\#   head(pressure, 10), caption = \textquotesingle{}Here is a nice table!\textquotesingle{},}
+\CommentTok{\#   booktabs = TRUE}
+\CommentTok{\# )}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+Le taux de mortalité néonatale, calculé comme le nombre
+d'enfants décédés entre 0 et 28 jours de vie, rapporté à 1 000
+naissances vivantes, pouvait être estimé en Algérie, au milieu
+des années 2000, à 25 pour 1 000, représentant 80 \% de la
+mortalité infantile. La mortalité néonatale précoce survenant
+dans les six premiers jours de la vie était, quant à elle, estimée
+à 20 pour 1 000 naissances vivantes, représentant 80 \% de la
+mortalité néonatale {[}18{]}.
+Le taux de mortalité périnatale (mortinatalité et mortalité
+néonatale précoce) est un indicateur remarquable de la
+qualité des soins obstétricaux et néonatals. En l'absence de
+statistiques systématiques sur les morts foetales pour
+déterminer la mortinatalité, la mortalité néonatale précoce
+peut être considérée comme un indicateur de la façon dont
+sont prodigués les soins aux nouveau-nés dans un établissement.
+En effet, la mortalité néonatale figure parmi les
+indicateurs de développement d'une collectivité donnée
+et constitue le reflet de la qualité des soins obstétricaux et
+néonatals dans un établissement de santé.
+La mortalité néonatale précoce dans les services de
+néonatalogie des hôpitaux des pays pauvres peut frôler
+l'hécatombe en dépassant 50 \% {[}4{]}, lorsque le nombre de
+décès recensés entre zéro et six jours de vie est ramené au
+nombre d'enfants nés vivants admis au sein de ces services.
+Dans le cadre du système d'information sur la mortalité
+hospitalière mis en place par le service d'épidémiologie
+(SEMEP) au CHU de Blida, il était particulièrement
+intéressant d'apprécier l'importance et l'évolution de la
+mortalité néonatale enregistrée au CHU ainsi que celles des
+causes du décès néonatal.
+
+\hypertarget{matuxe9riel-et-muxe9thodes}{%
+\chapter{Matériel et méthodes}\label{matuxe9riel-et-muxe9thodes}}
+
+Ce rapport couvre une période de huit ans, de 1999 à 2006,
+depuis que le système sur la mortalité hospitalière mis en
+place par le SEMEP existe. Tous les décès survenus au CHU
+étaient activement recensés par les techniciens du SEMEP au
+niveau des différents services, avec l'aide des bureaux des
+entrées des trois unités du CHU.
+La Classification internationale des maladies (CIM-9) et
+ses règles de classement ont été utilisées pour coder la nature
+de la maladie causale, tandis que les opérations de saisie, de
+contrôle et d'analyse ont été effectuées par l'utilisation du
+logiciel Épi-Info™ dans sa sixième version.
+Le système sur la mortalité hospitalière mis en place par le
+SEMEP permet de déterminer la mortalité proportionnelle
+(MP) occasionnée par la mortalité néonatale (nombre de
+décès néonatals sur l'ensemble des décès). Le dénominateur
+utilisé pour estimer le taux de mortalité néonatale au CHU
+provient des données appartenant au registre d'admission du
+service de pédiatrie, au registre des naissances vivantes du
+service de gynécologie-obstétrique. Celui-ci, avec le service
+de pédiatrie, appartient à la même unité de lieu constituée par
+le complexe mère-enfant du CHU. Il a par ailleurs été tenu
+compte des nouveau-nés transférés des maternités périphériques
+ou d'autres hôpitaux.
+L'analyse des séries chronologiques a essentiellement fait
+appel au coefficient de corrélation (r) ainsi qu'au coefficient
+de corrélation des rangs de Spearman (r0). Le coefficient de
+corrélation r était déterminé pour apprécier l'évolution
+temporelle du nombre mensuel de décès néonatals, tandis
+que le coefficient de corrélation r0 était déterminé pour
+apprécier la tendance dessinée par le taux annuel de la
+mortalité néonatale et de la proportion annuelle des nouveaunés
+transférés des maternités périphériques au cours de la
+période d'étude. L'analyse des séries chronologiques a
+également fait appel à l'analyse de plans factoriels à une
+répétition pour déceler un éventuel effet des variables du plan
+{[}6{]}. Sauf indication contraire, les moyennes étaient accompagnées
+des écarts-types des valeurs des différentes séries.
+La prématurité a été définie comme l'état d'un nouveau-né
+déclaré né avant la 37e semaine d'aménorrhée d'une
+gestation, tandis qu'un cas de décès néonatal précoce a
+concerné un nouveau-né déclaré né vivant après une
+grossesse de 25 semaines au minimum.
+
+\hypertarget{ruxe9sultats}{%
+\chapter{Résultats}\label{ruxe9sultats}}
+
+Au total, 8 541 décès ont été enregistrés au CHU de Blida
+de 1999 à 2006, dont 2 167 décès néonatals, soit une MP de
+25,4 \%. Autrement dit, un décès sur quatre survenant au
+CHU de Blida concernait un nouveau-né âgé de moins
+de 29 jours. La MP occasionnée par la mortalité néonatale
+
+occupait la première position et devançait celle des maladies
+de l'appareil circulatoire (21 \%) et celle des traumatismes et
+empoisonnements (19,8 \%) qui occupaient respectivement
+les deuxième et troisième position.
+La mortalité néonatale précoce (0-6 jours) avec 1 808
+décès a représenté 83,4 \% de l'ensemble de la mortalité
+néonatale, tandis que la mortalité néonatale tardive
+(7-28 jours), avec 359 décès, a représenté 16,6 \% de
+l'ensemble de la mortalité néonatale. Il existait une relation
+entre l'année (comme variable servant de base aux
+comparaisons) et le type de mortalité : la fréquence relative
+de la mortalité néonatale précoce en 1999 (76,8 \%) était plus
+basse (p \textless{} 0,02). Mais dans l'ensemble, d'une année à une
+autre, la mortalité néonatale précoce représentait plus des
+quatre cinquièmes de la mortalité néonatale globale.
+La mortalité néonatale proportionnelle dans ses deux
+composantes est pratiquement restée stationnaire pendant la
+période d'étude, malgré une hausse en 2003 qui a affecté la
+mortalité néonatale précoce (Tableau 1).
+Parmi les décès néonatals précoces, 24,0 \% sont intervenus
+avant le premier jour de vie, tandis que près des deux
+tiers (63,0 \%) des décès sont intervenus dans les trois
+premiers jours de vie. Pour les décès néonatals tardifs,
+37,6 \% sont survenus entre sept et dix jours de vie.
+L'évolution annuelle de la répartition des décès néonatals
+précoces et tardifs selon l'âge en jours révolus du décès
+ne mettait pas en évidence de différence significative
+(Tableau 2).
+
+L'évolution mensuelle (8 × 12 = 96 mois) du nombre de
+décès néonatals précoces a dessiné une tendance significativement
+à la hausse au cours de la période d'étude (r = 0,21,
+p \textless{} 0,05), tandis que la mortalité néonatale tardive a dessiné
+une tendance à la baisse, mais de façon non significative
+(r = --0,18 NS). La résultante en est une tendance à la hausse
+de la mortalité néonatale globale au cours de la période
+d'étude, mais de façon non significative (r = 0,13 NS).
+Pour la mortalité néonatale précoce, l'analyse du plan
+factoriel relatif à l'année et au mois de l'année n'a pas mis en
+évidence un effet saisonnier (F = 1,34 NS), tandis qu'un
+excès de décès était notamment enregistré pour l'année 2003
+(F = 4,25 NS, p \textless{} 0,001). L'analyse du plan factoriel relatif
+au jour de la semaine et à l'heure du jour n'a mis en évidence
+ni un effet d'heure (F = 1,54 NS) ni un effet de jour de
+semaine (F = 0,69 NS).
+D'une année à une autre, la prématurité a représenté, en
+règle générale, plus de 40 \% des causes de décès de la
+mortalité néonatale précoce, suivie par le syndrome de
+détresse respiratoire et les infections néonatales, respectivement
+17 et 14,4 \%.
+Les infections ont représenté, pour la mortalité néonatale
+tardive, la cause la plus fréquente avec 43,8 \% des causes de
+décès en 1999 : cette proportion a ensuite régulièrement
+baissé au cours du temps pour représenter, en 2006,
+20,6 \% des causes de décès (Tableau 3).
+Le rapport de masculinité était de 1,5 pour la mortalité
+néonatale globale. Le rapport de masculinité restait
+
+pratiquement le même, aussi bien pour la phase précoce que
+pour la phase tardive, respectivement de 1,4 et 1,5.
+Cependant, il n'existait pas de relation entre le type
+de mortalité et le sexe : la mortalité néonatale précoce
+a représenté respectivement 83 et 84 \% de la mortalité
+néonatale chez les nouveau-nés de sexe masculin et
+ceux de sexe féminin. Les causes de décès chez les deux
+sexes ne semblaient pas non plus différer sensiblement
+(Tableau 4).
+
+La durée de séjour moyenne des enfants décédés en
+période néonatale précoce pendant la période d'étude était
+de 1,4 ± 0,0 jour (moyenne ± erreur type), tandis que la
+médiane était de 1 jour. D'une année à une autre, cette
+moyenne n'a pas varié de façon significative. La durée de
+séjour moyenne des enfants décédés en période néonatale
+tardive était de 8,5 ± 0,3 jours (médiane = 8 jours) ; la
+durée de séjour moyenne en 1999 était relativement basse
+(Tableau 5).
+
+Les taux estimés de mortalité néonatale précoce et tardive,
+lorsque ces taux admettent comme dénominateur le nombre
+de nouveau-nés admis en néonatalogie pour exprimer la
+mortalité de service, ont dessiné une tendance significativement
+à la baisse expliquant par là même la tendance à la
+baisse du taux de mortalité globale. Par contre, aucune
+tendance temporelle significative n'était mise en évidence
+lorsque les taux sont exprimés en fonction du nombre de
+naissances vivantes (Tableau 6).
+Le taux de mortalité néonatale précoce pendant la période
+d'étude (1999-2006), en prenant en dénominateur le nombre
+de nouveau-nés admis en néonatalogie, était de 15,6 \%,
+tandis que le taux de mortalité tardive correspondant était de
+3,1 \%, soit un taux de mortalité néonatale globale de 18,7 \%.
+On pouvait donc raisonnablement estimer que chaque
+nourrisson admis en néonatalogie avait presque une
+probabilité de 1/6 de décéder avant le septième jour de vie.
+
+Le taux de mortalité néonatale précoce, en prenant comme
+dénominateur le nombre de naissances vivantes enregistrées
+dans l'établissement, était, pendant la période d'étude, de
+22,9 pour 1 000, tandis que le taux de mortalité néonatale
+tardive était de 4,5 pour 1 000, soit un taux de mortalité
+néonatale globale de 27,4 pour 1 000.
+Les nouveau-nés transférés des maternités périphériques
+ont représenté 20,4 \% des nouveau-nés admis en néonatalogie
+(2 366-11 612) et 2,9 \% des naissances vivantes
+(2 366-81 345) au CHU de Blida. Le nombre des décédés
+parmi les transférés s'est élevé à 410, soit une proportion de
+17,3 \% (410-2 366).
+Le taux de mortalité néonatale globale au CHU de Blida,
+pendant toute la période d'étude, pouvait alors, en soustrayant
+les décès parmi les transférés, être plus justement estimé à
+22,3 pour 1 000 naissances vivantes (1 757-78 879), soit une
+diminution de 18,9 \% par rapport au taux qui ne tiendrait
+
+pas compte des décès survenus parmi les nouveau-nés
+transférés.
+Pendant toute la période d'étude, le taux de mortalité
+néonatale précoce, en déduisant les décès survenus parmi les
+nouveau-nés transférés (294 décès), pouvait être estimé à
+19,2 pour 1 000 naissances vivantes, soit une diminution
+de 16,2 \% par rapport au taux qui ne tiendrait pas compte de
+ces décès.
+De même, le taux de mortalité néonatale tardive, en
+retranchant les décès parmi les transférés (116 décès),
+pouvait être estimé pendant toute la période d'étude à 3,1
+pour 1 000 naissances vivantes, soit une diminution de
+31,1 \% par rapport au taux qui ne tiendrait pas compte de ces
+décès.
+
+\hypertarget{discussion}{%
+\chapter{Discussion}\label{discussion}}
+
+La mortalité néonatale a donc constitué un quart des décès
+survenant au CHU de Blida pendant la période d'étude. Une
+MP de cet ordre (28 \%) a été retrouvée au CHU d'Annaba
+(Algérie) au début de la décennie écoulée {[}8{]}. Il est frustrant
+de ne pouvoir pousser plus loin les comparaisons, car les
+tentatives visant à établir des statistiques de mortalité et de
+morbidité avec des méthodes standardisées sont restées très
+limitées, même à l'échelle des CHU {[}7{]}.
+Les décès néonatals survenus en dehors du service de
+néonatalogie ont constitué moins de 4 \% (3,3 \%) de
+l'ensemble des décès néonatals survenus au CHU. Du fait
+de cette faible proportion, ces décès ont été comptabilisés
+avec ceux qui sont survenus en néonatalogie pour calculer
+la mortalité de service et pour déterminer les autres taux de
+mortalité néonatale.
+La mortalité néonatale précoce a représenté plus de 80 \%
+de la mortalité néonatale au CHU de Blida : elle semblait du
+même ordre de grandeur que celle enregistrée dans la plupart
+des pays de la sous-région ouest africaine où elle pouvait
+constituer 75 à 90 \% de la mortalité néonatale {[}2,10{]}. Le
+risque mesurant la mortalité de service était aussi identique à
+celui enregistré dans un hôpital de Côte-d'Ivoire {[}19{]}.
+Les comparaisons, malgré les difficultés reconnues
+qu'elles suscitent du point de vue de la validité des données
+et de la standardisation des définitions {[}11{]}, sont encore plus
+intéressantes lorsque le taux de mortalité néonatale admet
+comme dénominateur le nombre de naissances vivantes
+enregistré dans l'établissement.
+Le taux moyen de mortalité néonatale précoce à l'hôpital
+de gynécologie-obstétrique de Hanoi pendant la période
+1991-1995, de l'ordre de 24 pour 1 000 naissances vivantes
+{[}13{]}, était approximativement identique à celui enregistré au
+CHU de Blida. Au CHU de Dakar, pendant la décennie
+1994-2003, ce taux était encore plus élevé : 45,5 pour
+1 000 et augmentait même à 67,5 pour 1 000 lorsqu'il était
+
+tenu compte des nouveau-nés transférés des maternités
+périphériques et dont la proportion représentait 4,2 \% {[}9{]}.
+Le taux de mortalité néonatale précoce à l'hôpital de
+gynécologie-obstétrique de Hanoi n'était plus, en 1995, que
+de 15,3 pour 1 000, chute essentiellement due à une
+augmentation de la proportion d'accouchements normaux
+et à une diminution drastique de la proportion des cas
+adressés par les maternités périphériques, suite à un
+changement dans la politique nationale de santé intervenu
+en 1992 {[}13{]}. Ce taux restait néanmoins élevé lorsqu'il était
+comparé à celui enregistré en 1991 dans un hôpital
+universitaire de Malaisie : 5,5 pour 1 000 naissances
+vivantes {[}3{]}. Une baisse du taux de mortalité néonatale a
+aussi été enregistrée dans un hôpital universitaire nigérian, de
+50 pour 1 000 en 1974 à 16 pour 1 000 en 1981, baisse
+expliquée par une réduction de la mortalité chez les enfants
+dont le poids de naissance dépassait 2 500 g et ceux
+souffrant d'asphyxie {[}21{]}. Le taux de mortalité néonatale
+précoce a atteint 34 pour 1 000 dans un centre universitaire
+de Madagascar {[}5{]}.
+Le taux de mortalité néonatale précoce pouvait être
+cependant bas en Afrique, de l'ordre de 14 pour 1 000 dans
+un district sanitaire au Burkina Faso, tandis que le taux de
+mortalité néonatale globale était de 24 pour 1 000 {[}25{]}.
+Le taux de mortalité néonatale précoce dans un district
+rural au Mali était aussi faible (17 pour 1 000), tandis que le
+taux de mortalité néonatale tardive était de 7 pour 1 000, soit
+un taux de mortalité néonatale globale de 24 pour 1 000, plus
+faible que le taux national estimé à 57 pour 1 000 {[}24{]}.
+Des taux nationaux du même ordre de grandeur pouvaient
+être retrouvés pour l'Afrique et l'Asie. Pour l'Afrique au sud
+du Sahara, le taux moyen régional en 1995 était estimé à
+39 pour 1 000 (variant de 13 pour 1 000 au Kenya à 108 pour
+1 000 au Sénégal), tandis que pour l'Asie du Sud, pour la
+même année, le taux de mortalité néonatale variait de 42 à
+57 pour 1 000 {[}14{]}.
+Le taux de mortalité néonatale précoce, à partir des
+données portant sur 7 993 grossesses dans six pays en
+développement, pouvait encore être plus faible : 9 pour
+1 000 naissances vivantes {[}20{]}. Au Québec, pendant la
+période 1976-2005, le taux de mortalité néonatale précoce
+n'a été que de 2,9 pour 1 000, alors que le taux de mortalité
+néonatale global était de 3,4 pour 1 000 {[}15{]}. En République
+tchèque, au milieu des années 1990, le taux de mortalité
+néonatale global n'était plus que de 3,8 pour 1 000 {[}16{]}.
+On peut à ce niveau mettre en exergue que le CHU de
+Blida ne se distingue finalement pas par un risque moins
+élevé de mortalité néonatale, puisqu'il enregistre des taux
+similaires à ceux enregistrés au niveau national {[}18{]}. Par
+ailleurs, le risque annuel de décéder pour un nouveau-né,
+exprimé pour 1 000 naissances vivantes, est resté stationnaire
+pendant toute la période d'étude, malgré la tendance à la
+baisse enregistrée pour la mortalité correspondante de
+
+service. Il est vrai que la proportion des nouveau-nés
+transférés des maternités périphériques était relativement
+élevée ; un nouveau-né sur cinq. Cependant, la proportion
+annuelle de ces transférés a même dessiné une tendance à la
+baisse (r0 = --0,88, p = 0,01), passant de 30,1 \% en 2000
+(proportion la plus élevée enregistrée) à 17,5 \% en 2006
+(proportion la plus basse enregistrée), suggérant que la
+fonction de centre de référence des grossesses à risque pour
+la région dévolue au CHU n'a pas été accrue au cours de
+la période d'étude. De fait, cette période n'a été caractérisée
+ni par l'acquisition de nouveaux équipements, ni par la mise
+en place de nouvelles techniques d'exploration ou de soins,
+à l'exception d'efforts consentis en matière d'hygiène
+hospitalière.
+La surmortalité masculine en matière de décès néonatals
+est constatée dans presque toutes les recherches antérieures,
+avec un sex-ratio par exemple de 1,3 pour les décès précoces
+dans un centre hospitalier universitaire malgache {[}5{]}, et a été
+aussi retrouvée au Maroc {[}1{]}.
+Parmi les causes de mortalité néonatale précoce identifiées
+à travers le monde, la prématurité est souvent retrouvée en
+première position. Il est possible, dans notre série, que
+quelques faux cas de prématurité aient été inclus, notamment
+des hypotrophiques à terme d'un poids de naissance inférieur
+à 2 500 g (date des dernières règles inconnue ou douteuse,
+absence de contrôle par une échographie précoce et nondétermination
+à la naissance de l'âge gestationnel par la
+morphologie et l'examen neurologique). Malgré ces réserves,
+on peut considérer que la prématurité a représenté
+pendant la période d'étude plus de 40 \% des décès néonatals
+précoces. Une proportion supérieure à 70 \% a été retrouvée
+à l'hôpital de gynécologie-obstétrique de Hanoi {[}13{]} et au
+CHU de Lomé, au Togo, au début des années 1990 {[}4{]}. Une
+proportion de l'ordre de 50 \% a été retrouvée à l'institut de
+nutrition et de santé en Guinée {[}10{]}.
+Il semble bien que la prématurité puisse représenter plus
+de 60 \% des causes de décès néonatals précoces {[}20{]}.
+Cependant, cette contribution peut être plus faible : de
+l'ordre de 23 \% dans un district sanitaire au Burkina
+Faso {[}25{]}.
+La prématurité a souvent été décrite comme une « maladie
+à caractère social très prononcé », car la prématurité est plus
+fréquente parmi les enfants de femmes pauvres et peu
+éduquées {[}13{]}. Le taux de prématurité (naissance avant
+37 semaines de gestation), qui varierait de 5 à 9 \% dans les
+pays en développement {[}23{]}, reste en réalité du même ordre
+de grandeur dans les pays développés et dépasserait 12 \%
+aux États-Unis {[}12{]}.
+La fréquence de la prématurité reste aussi élevée et ne
+semble pas baisser, malgré les avancées réalisées dans la
+connaissance des facteurs de risque et l'introduction de
+mesures médicales pour lutter contre ce problème de santé
+publique. Cependant, des progrès considérables ont été
+
+enregistrés en matière de survie des nouveau-nés prématurés
+{[}12,17{]}.
+La proportion des prématurés décédés parmi les nouveaunés
+pourrait être estimée à environ 1 \% dans notre série
+(844-78 979), mais la létalité due à la prématurité ne peut être
+estimée, étant donné que le nombre total des prématurés nés
+au CHU n'a pu être établi. La mortalité élevée chez les
+prématurés est due au fait que les nouveau-nés prématurés
+sont très vulnérables aux risques d'asphyxie et d'infection
+par immaturité des fonctions immunitaire, respiratoire, etc.
+L'infection a aussi été identifiée comme une cause
+majeure de mortalité néonatale, dépassant la contribution
+de la prématurité, et pouvant représenter jusqu'à 50 \% des
+causes de la mortalité néonatale {[}25{]}. Dans ce district
+sanitaire, l'infection a représenté la première cause de
+mortalité pendant les deux phases de la période néonatale,
+mais était plus impliquée, comme au CHU de Blida, dans des
+proportions différentes il est vrai, dans la phase tardive que
+dans la phase précoce. Dans notre série, les infections
+nosocomiales ont probablement constitué l'essentiel des
+infections en surpassant le poids des infections d'origine
+maternofoetale, mais le problème n'a pu être quantifié. Les
+efforts consentis en matière d'hygiène hospitalière pourraient
+expliquer les pourcentages relativement bas enregistrés en
+2006, concernant la contribution des infections dans la
+survenue de décès néonatals.
+Les malformations congénitales ont constitué 11,1 \% de
+l'ensemble des décès néonatals. Nonobstant les nouveau-nés
+transférés des maternités périphériques et qui seraient
+atteints d'anomalies congénitales, les malformations n'ont
+constitué que 0,3 \% des naissances vivantes. Le même taux
+a été retrouvé à l'hôpital de gynécologie-obstétrique de
+Hanoi {[}13{]}, mais ces taux sont probablement sous-estimés,
+car le diagnostic est clinique, et les malformations mineures
+ne sont pas rapportées. Il est parfois reconnu, parmi les
+décès néonatals précoces, qu'un nouveau-né sur deux
+décède dans les premières 24 heures de vie {[}18,13{]}. À
+Blida, cette proportion était de 25 \% environ, mais dépassait
+55 \% lorsqu'elle était mesurée dans les 48 premières
+heures de vie.
+Tous les décès néonatals ne sont certainement pas
+évitables. Mais la moitié d'entre eux pourraient être évités
+grâce à des mesures simples et peu coûteuses. Des pays
+comme la Colombie ou le Sri Lanka qui enregistrent moins
+de 15 décès pour 1 000 naissances vivantes ont fait la preuve
+que des techniques coûteuses ne sont pas un préalable à une
+réussite en la matière. Dans la plupart des pays, la mortalité
+des enfants dont la mère a bénéficié de soins prénatals et de
+soins qualifiés à l'accouchement est généralement inférieure
+de plus de la moitié à la mortalité des enfants dont la mère n'a
+pas bénéficié de ce type de soins, même si le problème de
+la fragmentation actuelle des soins au nouveau-né reste
+posé {[}22{]}.
+
+\hypertarget{conclusion}{%
+\chapter{Conclusion}\label{conclusion}}
+
+L'Algérie a pris conscience du lourd fardeau représenté par la
+mortalité néonatale en mettant en place un Programme
+triennal national sur la périnatalité. La surveillance de la
+grossesse et du travail, d'une part, et la prise en charge
+immédiate du nouveau-né par une équipe obstétricopédiatrique,
+d'autre part, sont les deux piliers de ce programme,
+dont des objectifs quantifiés concernent, par exemple, une
+réduction de 25 \% de la mortalité néonatale précoce et une
+réduction de 30 \% de la mortalité des nouveau-nés de faible
+poids de naissance d'ici 2009 {[}18{]}.
+Les données du CHU de Blida sur la mortalité néonatale,
+décrivant une période fort homogène, devraient contribuer
+à mesurer le degré d'atteinte d'objectifs fixés de ce
+programme, d'autant plus que le risque de mortalité
+néonatale déterminé pour le CHU rejoint celui enregistré à
+l'échelle nationale.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
