@@ -1,0 +1,115 @@
+\documentclass[]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}           %pour un document en français
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}                %pour insérer images et pdf entre autres
+
+%\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry} %réglages des marges du document
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{paralist}
+\usepackage{setspace}\spacing{1.5}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{dcolumn}
+\usepackage{lipsum}                  %juste utile ici pour générer du faux texte
+\usepackage{amsmath,amsfonts,amssymb}%extensions de l'ams pour les mathématiques American Mathematical Society 
+\usepackage{hyperref}                %rend actif les liens, références croisées, toc…
+%\usepackage{natbib}\bibliographystyle{agsm}
+\usepackage[nottoc, numbib]{tocbibind}  
+%\usepackage[shadow]
+\usepackage{tikz}
+\newcommand{\dsp}{Direction de la santé et de la population }
+
+\title{bibliographie}
+\author{tibaredha}
+\date{March 2023}
+
+\usepackage{Sweave}
+\begin{document}
+\input{memoire-concordance}
+\maketitle
+\input{./memoire/pagedegarde}
+
+
+
+
+\begin{Schunk}
+\begin{Sinput}
+> 1 + 1
+\end{Sinput}
+\begin{Soutput}
+[1] 2
+\end{Soutput}
+\begin{Sinput}
+> par(mar = c(4, 4, .2, .2))
+> plot(rnorm(100))
+> x <- 1+1
+\end{Sinput}
+\end{Schunk}
+
+You can also write inline expressions, e.g. $\pi=3.14159265358979$,
+and 2 is a big number.
+\LaTeX
+
+\lipsum[1]
+Lorem\footnote{Une note de bas de page.}
+
+
+\tiny abcdefghijklmnopqrst\\
+\scriptsize abcdefghijklmnopqrst\\
+\footnotesize abcdefghijklmnopqrst\\
+\small abcdefghijklmnopqrst\\
+\normalsize abcdefghijklmnopqrst\\
+\large abcdefghijklmnopqrst\\
+\Large abcdefghijklmnopqrst\\
+\LARGE abcdefghijklmnopqrst\\
+\huge abcdefghijklmnopqrst\\
+\Huge abcdefghijklmnopqrst\\
+
+\normalsize
+
+
+\textit Italique
+\emph Texte en emphase
+\textbf <U+E03A>ras
+\textsc tibaredha
+\underline Soffligné (à éfiiter)
+\textsuperscript Effiposant
+\textsubscript Indice (nécessite le package subscript)
+
+\textcolor{red}{tibaredha}.
+\includegraphics[]{img/SIG_commune_Djelfa}.
+
+\begin{tabular}{|l|c|r|}
+Première cellule à gauche
+ & Première cellule au centre
+ Première cellule à droite \\
+ Seconde cellule à gauche
+ & Seconde cellule au centre
+ & Seconde cellule à droite \\
+ \end{tabular}
+
+
+
+
+
+%\input{./memoire/attestation}
+
+
+
+%\input{./memoire/abstract}
+%\input{./memoire/introduction}
+%\input{./memoire/materiel_et_methodes}
+%\input{./memoire/resultat}
+%\input{./memoire/discusion}
+%\input{./memoire/conclusion}
+%\input{./memoire/références}
+
+
+\bibliography{bibliography/bib}
+\bibliographystyle{plain}
+\end{document}
