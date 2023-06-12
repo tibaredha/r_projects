@@ -1,7 +1,7 @@
 # Résumé
 @tibaredha
 
-Dans le cadre du système d’information actif mis
+**Dans le cadre du système d’information** actif mis
 en place par le service d’épidémiologie sur la mortalité
 hospitalière au CHU de Blida (Algérie), une étude a été
 réalisée pour apprécier l’importance et l’évolution de la
