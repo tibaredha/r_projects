@@ -1,100 +1,87 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 80
+---
+
 # Résumé
-@tibaredha
 
-**Dans le cadre du système d’information** actif mis
-en place par le service d’épidémiologie sur la mortalité
-hospitalière au CHU de Blida (Algérie), une étude a été
-réalisée pour apprécier l’importance et l’évolution de la
-mortalité néonatale enregistrée au CHU au cours des années
-1999-2006, ainsi que celles des causes du décès néonatal.
-La Classification internationale des maladies (CIM-9) a
-été utilisée pour coder la nature de la maladie causale. Les
-opérations de saisie, de contrôle et d’analyse ont été effectuées
-par l’utilisation du logiciel ÉpiInfo™dans sa sixième version.
-Au total, 2 167 décès néonatals ont été enregistrés au CHU
-pendant la période d’étude, soit une mortalité proportionnelle
-de 25,4 %. La mortalité néonatale précoce (0-6 jours) a
-représenté 83,4 % de l’ensemble de la mortalité néonatale.
-Près des deux tiers des décès néonatals précoces sont
-intervenus dans les trois premiers jours de vie. L’évolution
-mensuelle du nombre de décès néonatals précoces a dessiné
-une tendance significativement à la hausse au cours de la
-période d’étude (p < 0,05) sans mise en évidence d’effet
-saisonnier. Le rapport de masculinité était pratiquement le
-même pour la mortalité néonatale précoce et tardive, respectivement
-1,4 et 1,5. La prématurité a représenté 42,1 % des
-causes de décès de lamortalité néonatale précoce, suivie par le
-syndrome de détresse respiratoire et les infections ; respectivement
-17 et 14,4 %. Les infections ont représenté, avec une
-fréquence relative de 36,2 %, la cause la plus fréquente pour
-la mortalité néonatale tardive. Le taux de mortalité néonatale
-précoce au cours de la période d’étude, lorsque celui-ci admet
-pour dénominateur le nombre de nouveau-nés admis en
-néonatalogie pour exprimer la mortalité de service, était de
-15,6 %. Pendant toute la période d’étude, le taux de mortalité
-néonatale précoce, en déduisant les décès survenus parmi
-les nouveau-nés transférés, pouvait être estimé à 19,2 pour
+**Dans le cadre du système d'information** actif mis en place par le service
+d'épidémiologie sur la mortalité hospitalière au CHU de Blida (Algérie), une
+étude a été réalisée pour apprécier l'importance et l'évolution de la mortalité
+néonatale enregistrée au CHU au cours des années 1999-2006, ainsi que celles des
+causes du décès néonatal. La Classification internationale des maladies (CIM-9)
+a été utilisée pour coder la nature de la maladie causale. Les opérations de
+saisie, de contrôle et d'analyse ont été effectuées par l'utilisation du
+logiciel ÉpiInfo™dans sa sixième version. Au total, 2 167 décès néonatals ont
+été enregistrés au CHU pendant la période d'étude, soit une mortalité
+proportionnelle de 25,4 %. La mortalité néonatale précoce (0-6 jours) a
+représenté 83,4 % de l'ensemble de la mortalité néonatale. Près des deux tiers
+des décès néonatals précoces sont intervenus dans les trois premiers jours de
+vie. L'évolution mensuelle du nombre de décès néonatals précoces a dessiné une
+tendance significativement à la hausse au cours de la période d'étude (p \<
+0,05) sans mise en évidence d'effet saisonnier. Le rapport de masculinité était
+pratiquement le même pour la mortalité néonatale précoce et tardive,
+respectivement 1,4 et 1,5. La prématurité a représenté 42,1 % des causes de
+décès de lamortalité néonatale précoce, suivie par le syndrome de détresse
+respiratoire et les infections ; respectivement 17 et 14,4 %. Les infections ont
+représenté, avec une fréquence relative de 36,2 %, la cause la plus fréquente
+pour la mortalité néonatale tardive. Le taux de mortalité néonatale précoce au
+cours de la période d'étude, lorsque celui-ci admet pour dénominateur le nombre
+de nouveau-nés admis en néonatalogie pour exprimer la mortalité de service,
+était de 15,6 %. Pendant toute la période d'étude, le taux de mortalité
+néonatale précoce, en déduisant les décès survenus parmi les nouveau-nés
+transférés, pouvait être estimé à 19,2 pour
 
-1 000 naissances vivantes, tandis que le taux de mortalité
-néonatale globale pouvait être estimé à 22,3 pour 1 000 naissances
-vivantes. Aucune tendance temporelle significative n’a
-été mise en exergue. Le CHU de Blida ne se caractérise pas par
-un risque inférieur de mortalité néonatale par rapport à celui
-enregistré à l’échelle nationale. Les données du CHU de Blida
-contribuent à mesurer le degré d’atteinte d’objectifs fixés par
-le Programme national sur la périnatalité.
+1 000 naissances vivantes, tandis que le taux de mortalité néonatale globale
+pouvait être estimé à 22,3 pour 1 000 naissances vivantes. Aucune tendance
+temporelle significative n'a été mise en exergue. Le CHU de Blida ne se
+caractérise pas par un risque inférieur de mortalité néonatale par rapport à
+celui enregistré à l'échelle nationale. Les données du CHU de Blida contribuent
+à mesurer le degré d'atteinte d'objectifs fixés par le Programme national sur la
+périnatalité.
 
-## Mots clés 
+## Mots clés
 
-Mortalité néonatale précoce ·
-Mortalité néonatale tardive · Mortalité proportionnelle ·
-Causes du décès néonatal · Hôpital · Blida · Algérie ·
-Maghreb · Afrique du Nord
+Mortalité néonatale précoce · Mortalité néonatale tardive · Mortalité
+proportionnelle · Causes du décès néonatal · Hôpital · Blida · Algérie · Maghreb
+· Afrique du Nord
 
-## Abstract 
+## Abstract
 
-Within the framework of the active information
-system set up by the department of epidemiology on hospital
-mortality at the Blida (Algeria) University Teaching Hospital
-(CHU), a study was carried out to assess the importance and
-evolution of neonatal mortality recorded at the CHU in the
-last eight years (1999-2006) as well as the causes of neonatal
-death. The International Classification of Diseases (ICD-9)
-was used to encode the nature of the causal disease. Using the
-software EpiInfo™in its sixth version performed data entry,
-monitoring and analysis. On the whole, 2,167 neonatal
-deaths were recorded at the CHU during the study period,
-representing a proportional mortality of 25.4%. Early
-neonatal mortality (0-6 days) accounted for 83.4% of all
-neonatal mortality. Nearly two thirds of early neonatal deaths
-occurred in the first three days of life. The monthly evolution
-of the number of early neonatal deaths revealed a significant
-rising trend during the study period (P < 0.05) without
-identification of seasonal effect. The sex ratio was practically
-the same for early and late neonatal mortality, respectively
-1.4 and 1.5. Prematurity accounted for 42.1% of the deaths
-in early neonatal deaths, followed by respiratory distress
-syndrome and infection, respectively 17.0 and 14.4%.
-Infections, with a relative frequency of 36.2%, represented
+Within the framework of the active information system set up by the department
+of epidemiology on hospital mortality at the Blida (Algeria) University Teaching
+Hospital (CHU), a study was carried out to assess the importance and evolution
+of neonatal mortality recorded at the CHU in the last eight years (1999-2006) as
+well as the causes of neonatal death. The International Classification of
+Diseases (ICD-9) was used to encode the nature of the causal disease. Using the
+software EpiInfo™in its sixth version performed data entry, monitoring and
+analysis. On the whole, 2,167 neonatal deaths were recorded at the CHU during
+the study period, representing a proportional mortality of 25.4%. Early neonatal
+mortality (0-6 days) accounted for 83.4% of all neonatal mortality. Nearly two
+thirds of early neonatal deaths occurred in the first three days of life. The
+monthly evolution of the number of early neonatal deaths revealed a significant
+rising trend during the study period (P \< 0.05) without identification of
+seasonal effect. The sex ratio was practically the same for early and late
+neonatal mortality, respectively 1.4 and 1.5. Prematurity accounted for 42.1% of
+the deaths in early neonatal deaths, followed by respiratory distress syndrome
+and infection, respectively 17.0 and 14.4%. Infections, with a relative
+frequency of 36.2%, represented
 
-the most common cause for the late neonatal mortality. The
-rate of early neonatal mortality during the study period, when
-this one took for denominator the number of newborns
-admitted in neonatology to express the mortality of service,
-was 15.6%. Throughout the study period, the rate of early
-neonatal mortality, without counting the deaths among
-transferred newborns, could be estimated at 19.2 per 1,000
-live births, while the overall neonatal mortality rate could
-be estimated at 22.3 per 1,000 live births. No significant
-temporal tendency was pointed out. The CHU of Blida is not
-characterized by a lower risk of neonatal mortality compared
-to that recorded at national level. The data of the CHU will
-contribute to assessing the achievement of objectives set by
-the National programme on the perinatality.
+the most common cause for the late neonatal mortality. The rate of early
+neonatal mortality during the study period, when this one took for denominator
+the number of newborns admitted in neonatology to express the mortality of
+service, was 15.6%. Throughout the study period, the rate of early neonatal
+mortality, without counting the deaths among transferred newborns, could be
+estimated at 19.2 per 1,000 live births, while the overall neonatal mortality
+rate could be estimated at 22.3 per 1,000 live births. No significant temporal
+tendency was pointed out. The CHU of Blida is not characterized by a lower risk
+of neonatal mortality compared to that recorded at national level. The data of
+the CHU will contribute to assessing the achievement of objectives set by the
+National programme on the perinatality.
 
+## Keywords
 
-## Keywords 
-
-Early neonatal mortality · Late neonatal mortality ·
-Proportional mortality · Causes of neonatal death ·
-Hospital · Blida · Algeria · Maghreb · Northern Africa
+Early neonatal mortality · Late neonatal mortality · Proportional mortality ·
+Causes of neonatal death · Hospital · Blida · Algeria · Maghreb · Northern
+Africa

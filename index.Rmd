@@ -1,23 +1,25 @@
---- 
+---
 title: "Évolution de la mortalité néonatale"
 author: "Redha TIBA"
 date: "`r format(Sys.time(), '%d %m, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography:
+- book.bib
+- packages.bib
 description: |
   This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
   set in the _output.yml file.
+  The HTML output format for this example is bookdown::gitbook,
 link-citations: yes
 github-repo: rstudio/bookdown-demo
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-
 # About
-
 
 ```{r}
 1+1
@@ -28,4 +30,151 @@ github-repo: rstudio/bookdown-demo
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+```
+
+```{r library ,include=FALSE}
+rm(list = ls())
+library(tidyverse)
+library(labelled)
+library(gtsummary)
+theme_gtsummary_mean_sd()
+library(sf)
+library(ggthemes)
+```
+
+```{r load dada deces,message=FALSE, warning=FALSE,include=FALSE}
+source("./fonctions/fonction.R")
+```
+
+```{r}
+tbl <- data %>%
+  select(DATENAISSANCE,DINS) %>% 
+  arrange(DATENAISSANCE) %>% 
+  mutate(agej=DINS-DATENAISSANCE) %>% 
+  filter(agej >=0 & agej <= 365) %>% 
+  mutate(agej_ =
+           case_when
+            (
+             agej >= 0 & agej < 7 ~ "NNP",
+             agej >= 7 & agej < 28 ~ "NNT",
+             agej >= 28 & agej < 365 ~ "PNN"
+             )) %>% 
+  group_by(agej_) %>% 
+  summarise(nbr=n()) #%>% view()
+
+```
+
+```{r}
+#tbl
+```
+
+```{r ,include=FALSE}
+
+
+#glimpse(data)
+data %>% 
+  select(structure,Days,SEX) %>% #view()
+  mutate(structure = fct_infreq(structure)) %>%
+  filter(Days >= 0 & Days <= 1825) %>% 
+  group_by(structure) %>% 
+  summarise(tot=n()) %>% 
+  arrange(tot) 
+  
+```
+
+```{r,include=FALSE}
+nss <- 150000
+####################################################
+dpn <- data %>%
+  select(Days,SEX) %>% 
+  filter(Days >= 0 & Days <= 1825)    
+ca <- cut(
+  dpn$Days,
+  breaks = c(0,7,28,365,1825),
+  labels = c("NNP","NNT","PNN","1-5"))
+dpn <- cbind(dpn,ca)
+dpn$ca <- dpn$ca %>% replace_na('NNP')
+xtab <- table(dpn$ca,dpn$SEX)
+####################################################
+xtab <- cbind(xtab,rep(0, 4))           #nbr of row
+colnames(xtab) <- c("F","M","T")
+for (i in 1:nrow(xtab)) {xtab[i,3] <- sum(xtab[i,])}
+####################################################
+xtab <- rbind(xtab,rep(0, 3))             #nbr of col
+row.names(xtab) <- c("NNP","NNT","PNN","1-5","T")
+for (i in 1:ncol(xtab)) {xtab[5,i] <- sum(xtab[,i])}
+####################################################
+```
+
+```{r,include=TRUE}
+library(knitr)
+#xtab
+kable(xtab)
+```
+
+```{r,include=FALSE}
+nn <- xtab[1,3]+xtab[2,3]
+nnp <- xtab[1,3]
+nnt <- xtab[2,3]
+
+tx <- function(dec,nss) {
+  tx <- dec*1000/nss
+  res <- round(tx,2)
+  return(res)
+}
+
+
+#tx(nn,nss)
+```
+
+```{r,include=FALSE}
+xtab_fr <-  round(xtab/xtab[5,3],4)*100
+xtab_fr 
+```
+
+# Introduction
+
+Le taux de mortalité néonatale, calculé comme le nombre d'enfants
+décédés entre 0 et 28 jours de vie, rapporté à 1 000 naissances
+vivantes, pouvait être estimé a Wilaya Djelfa, au milieu de l'années
+2023, à **`r tx(nn,nss)`** pour 1 000, représentant xx % de la mortalité
+infantile. `r 1+1`
+
+La mortalité néonatale précoce survenant entre 0 et 7 jours de vie
+était, quant à elle, estimée à **`r tx(nnp,nss)`** pour 1 000 naissances
+vivantes, représentant xx % de la mortalité néonatale.
+
+La mortalité néonatale tardive survenant entre 7 et 28 jours de vie de
+la vie était, quant à elle, estimée à **`r tx(nnt,nss)`** pour 1 000
+naissances vivantes, représentant xx % de la mortalité néonatale .
+
+```{r}
+df <- data %>% 
+  select(Days) %>% 
+  filter(Days >= 0 & Days <= 365 ) %>% 
+  mutate(agej_ =
+           case_when
+            (
+             Days >= 0 & Days < 7 ~ "NNP",
+             Days >= 7 & Days < 28 ~ "NNT",
+             Days >= 28 & Days < 365 ~ "PNN"
+             )) %>% 
+  group_by(agej_) %>% 
+  summarise(nbr=n()) #%>% view()
+
+#glimpse(df)
+```
+
+```{r}
+
+# par(mfrow=c(1,2))
+# library(profvis)
+# 
+# profvis({
+#   data(diamonds, package = "ggplot2")
+# 
+#   plot(price ~ carat, data = diamonds)
+#   m <- lm(price ~ carat, data = diamonds)
+#   abline(m, col = "red")
+# })
 ```

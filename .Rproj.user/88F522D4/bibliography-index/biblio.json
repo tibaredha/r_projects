@@ -24,6 +24,65 @@
             "type": "book"
         },
         {
+            "author": [
+                {
+                    "family": "Astagneau",
+                    "given": "Pascal"
+                },
+                {
+                    "family": "Lepoutre",
+                    "given": "Agnès"
+                }
+            ],
+            "container-title": "Actualité et Dossiers en Santé Publique",
+            "id": "astagneau2002",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002,
+                        1,
+                        1
+                    ]
+                ]
+            },
+            "page": "27-29",
+            "title": "La mortalité attribuable aux infections hospitalières",
+            "type": "article-journal",
+            "volume": "38"
+        },
+        {
+            "edition": "Thirteenth edition",
+            "editor": [
+                {
+                    "family": "Hass",
+                    "given": "Joel"
+                },
+                {
+                    "family": "Weir",
+                    "given": "Maurice D."
+                }
+            ],
+            "id": "thomas2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "language": "en",
+            "publisher": "Pearson",
+            "publisher-place": "Boston",
+            "title": "Thomas’ calculus",
+            "type": "book"
+        },
+        {
+            "id": "calculus",
+            "language": "en",
+            "title": "Calculus of a single variable",
+            "type": "book"
+        },
+        {
             "URL": "https://www.R-project.org/",
             "author": [
                 {
